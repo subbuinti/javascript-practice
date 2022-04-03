@@ -1,8 +1,8 @@
-const calculator = (a, b, operation) => {
+function calculator(a, b, operation) {
   if (operation === "+") return a + b;
   if (operation === "-") return a - b;
   if (operation === "*") return a * b;
-  if (operation === "/") return b === 0 ? "Can't divide by 0!" : a / b;
-};
+  if (operation === "/") return a / b;
+}
 
-console.log(calculator(10, 10, "+"));
+console.log(calculator(5, 10, "/"));
