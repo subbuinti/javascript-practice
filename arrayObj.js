@@ -21,13 +21,14 @@ let personDetails = [
 ];
 
 function getAge(dob) {
-  var today = new Date();
-  var birthDate = new Date(dob);
-  var age = today.getFullYear() - birthDate.getFullYear();
-  var m = today.getMonth() - birthDate.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-    age--;
-  }
+  let today = new Date();
+  let birthDate = new Date(dob);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  let m = today.getMonth() - birthDate.getMonth();
+
+  //   if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+  //     age--;
+  //   }
   return age;
 }
 
@@ -35,7 +36,7 @@ let newArr = personDetails.map((item) => {
   let newObj = {
     name: item.name,
     age: getAge(item.dob),
-    perMonthSal: item.sal / 12,
+    perMonthSal: Math.round(item.sal / 12),
   };
   return newObj;
 });
