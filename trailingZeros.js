@@ -10,8 +10,11 @@ function findTrailingZeros(n) {
   let count = 0;
 
   // Keep dividing n by powers of 5 and update count
-  for (let i = 5; Math.floor(n / i) >= 1; i *= 5) count += Math.floor(n / i);
+  for (let i = 5; Math.floor(n / i) >= 1; i *= 5) {
+    count += Math.floor(n / i);
+  }
+
   return count;
 }
 
-console.log(findTrailingZeros(110));
+console.log(findTrailingZeros(100));
