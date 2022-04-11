@@ -1,7 +1,7 @@
 let n = 10;
 
-let starts = [];
-let ends = [];
+let starts = [1, 7];
+let ends = [2, 8];
 
 let max = 0;
 let count = 0;
