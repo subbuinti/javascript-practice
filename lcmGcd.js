@@ -10,7 +10,7 @@ function CountPairs(a, n) {
 }
 function gcd(i, j) {
   if (j === 0) return i;
-  /* else */ return gcd(j, i % j);
+  else return gcd(j, i % j);
 }
 
 let arr = [2, 3, 4];
