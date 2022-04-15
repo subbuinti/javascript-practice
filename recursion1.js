@@ -1,11 +1,21 @@
-function fun(x, y) {
-  if (y == 0) return 0;
-  return x + fun(x, y - 1);
-}
+const nullify = (N) => {
+  let table = new Array(N + 1).fill(1e9);
 
-function fun2(a, b) {
-  if (b == 0) return 1;
-  return fun(a, fun2(a, b - 1));
-}
+  table[0] = 0;
+  console.log(table);
 
-console.log(fun2(2, 3));
+  for (let i = 0; i <= N; i++) {
+    let str = i.toString();
+    console.log("str", str);
+    for (let c = 0; c < str.length; c++) {
+      let xo = i - parseInt(str[c]);
+      console.log("xo", xo);
+      table[i] = Math.min(table[i], table[xo] + 1);
+      console.log("table", i, table[i]);
+    }
+  }
+  return table[N];
+};
+
+let N = 27;
+console.log(nullify(N));
