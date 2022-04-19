@@ -13,6 +13,7 @@ const nullify = (N) => {
       table[i] = Math.min(table[i], table[xo] + 1);
       console.log("table", i, table[i]);
     }
+    
   }
   return table[N];
 };
