@@ -16,7 +16,7 @@ function findMajority(arr, n) {
   else console.log("No Majority Element");
 }
 
-let arr = [1, 3, 3, 3, 2];
+let arr = [1, 3, 3, 3, 9, 3, 2];
 let n = arr.length;
 
 findMajority(arr, n);
