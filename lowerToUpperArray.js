@@ -1,4 +1,4 @@
-let arr = ["a", "b", "c", "d", "E", "F"];
+let arr = ["a", "b", "d", "E", "F"];
 let res = [];
 
 for (let i = 0; i < arr.length; i++) {
