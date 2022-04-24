@@ -13,7 +13,7 @@ function commonEle(a, b) {
   return unique;
 }
 
-let b = [1, 2, 3, 6, 8, 2, 4];
+let b = [1, 2, 6, 8, 2, 4];
 let a = [1, 8, 2, 9];
 // op = [2]
 
