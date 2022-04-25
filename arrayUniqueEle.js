@@ -9,7 +9,7 @@ function unique(arr, n) {
   return -1;
 }
 
-let arr = [1, 2, 1, 2];
+let arr = [1, 2, 3, 1, 2];
 let n = arr.length;
 
 console.log(unique(arr, n));
